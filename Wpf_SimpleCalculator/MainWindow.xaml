@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_SimpleCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="572.997">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="23*"/>
+            <ColumnDefinition Width="742*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lbl_title" Content="The Drunk Calculator" Grid.Column="2" HorizontalAlignment="Center" Margin="27.667,43,73,0" VerticalAlignment="Top" Height="50" Width="428" Cursor="None" FontFamily="Wide Latin" FontSize="22" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect Color="#FFA7AFFF" BlurRadius="4"/>
+            </Label.Effect>
+        </Label>
+        <RadioButton x:Name="radBtn_Drunk" Content="I Am Drunk" Grid.Column="2" HorizontalAlignment="Left" Margin="52.667,93,0,0" VerticalAlignment="Top" Height="28" Width="168" Background="#FFED8A8A" FontSize="14" Checked="radBtn_Drunk_Checked">
+            <RadioButton.Effect>
+                <BlurEffect Radius="3"/>
+            </RadioButton.Effect>
+        </RadioButton>
+        <RadioButton x:Name="radBtn_NotDrunk" Content="I Am Not Drunk" Grid.Column="2" HorizontalAlignment="Left" Margin="52.667,122,0,0" VerticalAlignment="Top" Height="26" Width="138" Checked="radBtn_NotDrunk_Checked" Background="#FFED8A8A" FontSize="14"/>
+        <TextBox x:Name="txtBox_DrunksPerBus" Grid.Column="2" HorizontalAlignment="Left" Height="29" Margin="140.667,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" Background="#FFDFDFDF"/>
+        <Label x:Name="lbl_DrunksPerBus" Content="Drunks Per Bus" Grid.Column="2" HorizontalAlignment="Left" Height="29" Margin="9.667,158,0,0" VerticalAlignment="Top" Width="102" FontSize="11"/>
+        <Label x:Name="lbl_NumberOfBuses" Content="Number Of Buses" Grid.Column="2" HorizontalAlignment="Left" Height="25" Margin="9.667,204,0,0" VerticalAlignment="Top" Width="102" FontSize="11"/>
+        <Button x:Name="btn_Calculate" Content="Calculate" Grid.Column="2" HorizontalAlignment="Left" Height="28" Margin="9.667,243,0,0" VerticalAlignment="Top" Width="92" Background="#FF6593BD" Click="btn_Calculate_Click"/>
+        <TextBox x:Name="txtBox_TotalDrunks" Grid.Column="2" HorizontalAlignment="Left" Height="28" Margin="140.667,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" Background="#FFDFDFDF"/>
+        <Button x:Name="btn_Help" Content="Help" Grid.Column="2" HorizontalAlignment="Left" Height="59" Margin="372.667,138,0,0" VerticalAlignment="Top" Width="59" Background="#FFE08A81" Click="btn_Help_Click"/>
+        <Image x:Name="img_Bus" Grid.Column="2" HorizontalAlignment="Left" Height="128" Margin="149.667,287,0,0" VerticalAlignment="Top" Width="201" Source="images/bus2.PNG"/>
+        <TextBox x:Name="txtBox_NumberOfBuses" Grid.Column="2" HorizontalAlignment="Left" Height="29" Margin="140.667,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" Background="#FFDFDFDF"/>
+
     </Grid>
 </Window>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="Wpf_SimpleCalculator.wnd_Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_SimpleCalculator"
+        mc:Ignorable="d"
+        Title="wnd_Help" Height="450" Width="800">
+    <Grid Margin="0,0,-61.667,-0.333">
+        <TextBox x:Name="txtBox_Help" HorizontalAlignment="Left" Height="218" Margin="25,88,0,0" TextWrapping="Wrap" Text="You should try to Google it... &#xD;&#xA;that's what my instructor tells me works!" VerticalAlignment="Top" Width="731" FontSize="36" TextChanged="txtBox_Help_TextChanged" FontWeight="Bold" BorderBrush="White"/>
+        <Button x:Name="btn_NotHelpful" Content="That's NOT Helpful!" HorizontalAlignment="Left" Height="50" Margin="448,321,0,0" VerticalAlignment="Top" Width="308" FontSize="18" Background="#FFF77A7A" Click="btn_NotHelpful_Click"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="148" Margin="46,249,0,0" VerticalAlignment="Top" Width="358" Source="images/bus2.PNG"/>
+
+    </Grid>
+</Window>
